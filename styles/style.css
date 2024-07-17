@@ -12,13 +12,19 @@
 .display-flex{
   display: flex;
 }
+.text-primary{
+  color: #FF900E;
+  font-size: 45px;
+  font-weight: 700;
+}
 /* dark-02 */
 .text-gray{
 color: rgb(66, 66, 66);
 }
 /* dark-03 */
 .text-light-gray{
-  color: rgb(19, 19, 19);
+ 
+
 }
 .bg-light{
   background-color: rgba(255, 144, 14, 0.1);
@@ -31,6 +37,10 @@ font-size: 1.25rem;
 font-weight: 600;
 border-radius: 8px;
 border: none;
+}
+main{
+ max-width: 1140px;
+  margin: 0 auto;
 }
 
 /* header-styles */
@@ -48,10 +58,11 @@ border: none;
 .navbar{
   align-items: center;
   justify-content: space-between;
+
 }
 .navbar, .banner{
   max-width: 1140px;
-  margin: 0 auto;
+margin: 0 auto;
 
 }
 .brand{
@@ -76,10 +87,44 @@ font-weight: 700;
   font-size: 16px;
 font-weight: 400;
 margin-bottom: 40px;
+
 }
+.teams{
+  display: flex;
+  align-items: center;
+}
+.team-img-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 85px;
+  margin-bottom: 120px;
+}
+.ql{
+  color: rgb(114, 114, 114);
+  font-size: 45px;
+font-weight: 700;
+}
+.features-container{
+  max-width: 530px;
+margin-left: 80px;
+
+}
+.or{
+  font-size: 45px;
+  font-weight: 700; 
+}
+
+
 /* responsive media query */
 @media screen and (max-width:576px) {
- .navbar, .nav-links{
+  .navbar, .nav-links, .teams{
     flex-direction: column;
+  }
+  .team-img-container{
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 50px;
+    margin-bottom: 80px;
   }
 }
